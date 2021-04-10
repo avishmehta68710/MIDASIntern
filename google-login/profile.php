@@ -136,7 +136,7 @@
                             <hr>
                             <p><i>For More Details about the teams and MIDAS Lab Head Over to Know More Button</i></p>
                             <hr>
-                            <a href="../index.html" class="btn btn-primary">Know More</a>
+                            <a href="../../index.html" class="btn btn-primary">Know More</a>
                         </div>
                     </div>
                 </div>
