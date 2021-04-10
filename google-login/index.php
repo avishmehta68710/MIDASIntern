@@ -70,7 +70,7 @@
         <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
         <script src="https://apis.google.com/js/platform.js" async defer></script>
         <meta name="google-signin-client_id" content="1095430051329-7tc94tni0gfha1od6232tlhhb5nahiur.apps.googleusercontent.com">
-        <title>Sign in & Sign up Form</title>
+        <title>Google Login</title>
 
     </head>
 

@@ -14,7 +14,7 @@ error_reporting(0);
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <meta name="google-signin-client_id" content="1095430051329-7tc94tni0gfha1od6232tlhhb5nahiur.apps.googleusercontent.com">
     <link rel="stylesheet" href="../css/register-login.css" />
-    <title>Sign in & Sign up Form</title>
+    <title>Login</title>
 </head>
 
 <body>
