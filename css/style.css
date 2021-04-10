@@ -1,0 +1,410 @@
+/*
+    Note: It is best to use a less version of this file ( see http://css2less.cc
+    For the media queries use @screen-sm-min instead of 768px.
+    For .omb_spanOr use @body-bg instead of white.
+*/
+
+#menu {
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 70%;
+    background-color: #3596e0;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.nav li a {
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    font-weight: bold;
+}
+
+.nav li {
+    list-style: none;
+    padding: 16px 0;
+}
+
+.nav {
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+
+.menu-bg,
+#menu-bar {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+#menu-bar {
+    z-index: 2;
+}
+
+.change-bg {
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%, -30%);
+}
+
+.change .bar {
+    background-color: white;
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change {
+    display: block;
+}
+
+#backgroundplaceholder {
+    position: relative;
+    LEFT: 1010px;
+    BOTTOM: 150px;
+}
+
+#playPauseButton {
+    position: relative;
+    /* the button's background color */
+    background: #fff;
+    border: none;
+    outline: none;
+    height: 1.5em;
+    width: 1.5em;
+    font-size: 2em;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    /* the button's a circle */
+    -moz-border-radius: 5em;
+    -webkit-border-radius: 5em;
+    border-radius: 5em;
+}
+
+#playPauseButton:focus {
+    outline: none;
+}
+
+
+/* the button's top layer: size, shape, appearance */
+
+#playPauseButton:before {
+    content: "";
+    position: absolute;
+    top: 0.4em;
+    /* for visual centering */
+    left: 0.6em;
+    height: 0;
+    border-style: solid;
+    border-width: 0.4em 0 0.4em 0.5em;
+    /* create shape with color */
+    border-color: transparent transparent transparent #e52d27;
+    transition: .218s ease;
+}
+
+
+/* checking */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.play-btn {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient( rgba(255, 0, 128, 0.8) 60%, rgba(255, 255, 255, 1) 62%);
+    border-radius: 50%;
+    position: relative;
+    display: block;
+    margin: 100px auto;
+    box-shadow: 0px 0px 25px 3px rgba(255, 0, 128, 0.8);
+}
+
+
+/* triangle */
+
+.play-btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-40%) translateY(-50%);
+    transform: translateX(-40%) translateY(-50%);
+    transform-origin: center center;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid #fff;
+    z-index: 100;
+    -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+
+/* pulse wave */
+
+.play-btn:before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation: pulsate1 2s;
+    animation: pulsate1 2s;
+    -webkit-animation-direction: forwards;
+    animation-direction: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: steps;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, .75);
+    top: -30%;
+    left: -30%;
+    background: rgba(198, 16, 0, 0);
+}
+
+@-webkit-keyframes pulsate1 {
+    0% {
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+        opacity: 1;
+        box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+        box-shadow: none;
+    }
+}
+
+@keyframes pulsate1 {
+    0% {
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+        opacity: 1;
+        box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1);
+        opacity: 0;
+        box-shadow: none;
+    }
+}
+
+
+/* last */
+
+a {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    color: #f4f4f4;
+}
+
+.btn {
+    text-decoration: none;
+    border: 1px solid rgb(255, 102, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( 120deg, transparent, rgba(146, 148, 248, 0.4), transparent);
+    transition: all 650ms;
+}
+
+.btn:hover:before {
+    left: 100%;
+}
+
+@media (min-width: 768px) {
+    .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+        margin-left: 25%;
+    }
+}
+
+.omb_login .omb_authTitle {
+    text-align: center;
+    line-height: 300%;
+}
+
+.omb_login .omb_socialButtons a {
+    color: white;
+    opacity: 0.9;
+}
+
+.omb_login .omb_socialButtons a:hover {
+    color: white;
+    opacity: 1;
+}
+
+.omb_login .omb_socialButtons .omb_btn-facebook {
+    background: #3b5998;
+}
+
+.omb_login .omb_socialButtons .omb_btn-twitter {
+    background: #00aced;
+}
+
+.omb_login .omb_socialButtons .omb_btn-google {
+    background: #c32f10;
+}
+
+.omb_login .omb_loginOr {
+    position: relative;
+    font-size: 1.5em;
+    color: #aaa;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.omb_login .omb_loginOr .omb_hrOr {
+    background-color: #cdcdcd;
+    height: 1px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.omb_login .omb_loginOr .omb_spanOr {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -0.6em;
+    margin-left: -1.5em;
+    background-color: white;
+    width: 3em;
+    text-align: center;
+}
+
+.omb_login .omb_loginForm .input-group.i {
+    width: 2em;
+}
+
+.omb_login .omb_loginForm .help-block {
+    color: red;
+}
+
+@media (min-width: 768px) {
+    .omb_login .omb_forgotPwd {
+        text-align: right;
+        margin-top: 10px;
+    }
+}
+
+body {
+    background-image: url("media/g1324.jpg");
+}
+
+.search-form .form-group {
+    float: right !important;
+    transition: all 0.35s, border-radius 0s;
+    width: 32px;
+    height: 32px;
+    /* background-color: #fff; */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    border-radius: 25px;
+    /* border: 1px solid #ccc; */
+}
+
+.search-form .form-group input.form-control {
+    padding-right: 20px;
+    border: 0 none;
+    background: transparent;
+    box-shadow: none;
+    display: block;
+    color: white;
+}
+
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+    display: none;
+}
+
+.search-form .form-group input.form-control:-moz-placeholder {
+    /* Firefox 18- */
+    display: none;
+}
+
+.search-form .form-group input.form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    display: none;
+}
+
+.search-form .form-group input.form-control:-ms-input-placeholder {
+    display: none;
+}
+
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+    width: 100%;
+    border-radius: 4px 25px 25px 4px;
+}
+
+.search-form .form-group span.form-control-feedback {
+    position: absolute;
+    top: -1px;
+    right: -2px;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #3596e0;
+    left: initial;
+    font-size: 14px;
+}

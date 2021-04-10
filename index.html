@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="1095430051329-dg1cbbit2oom5r76unqq3kg2dui0obnl.apps.googleusercontent.com">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style='background-image: url(" media/g1324.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;'>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: transparent !important;">
+        <div class="container-fluid">
+            <img src="media/midas.png" alt="Midas IIITD" height="70px" width=80px style="position:absolute;TOP:20px;LEFT:20px">
+            <a class="navbar-brand" href="http://midas.iiitd.edu.in/" style="position:absolute;LEFT:130px;TOP:30px;font-weight:bolder;color:white;">Midas IIITD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown" style="position:relative;LEFT:230px;TOP:22px;;font-weight:bold;font-size: 18px;">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;font-weight: bold;font-size: 18px;">
+                            Home
+                            </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://iiitd.ac.in/">IIITD</a></li>
+                            <li><a class="dropdown-item" href="http://midas.iiitd.edu.in/team/">Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" style="position:relative;LEFT:230px;font-weight:bold;font-size:18px;TOP:22px">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;font-weight: bold;font-size: 18px;">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="http://midas.iiitd.edu.in/news/">News</a></li>
+                            <li><a class="dropdown-item" href="http://midas.iiitd.edu.in/projects/">Projects</a></li>
+                            <li><a class="dropdown-item" href="http://midas.iiitd.edu.in/papers/">Papers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" style="position:relative;LEFT:230px;font-weight:bold;font-size:18px;TOP:22px">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;font-weight: bold;font-size: 18px;">
+                Services
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="http://midas.iiitd.edu.in/sponsorship/">Sponsors</a></li>
+                            <li><a class="dropdown-item" href="http://midas.iiitd.edu.in/openings/">Openings</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" style="position:relative;LEFT:230px;font-weight:bold;font-size:18px;TOP:22px">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;font-weight: bold;font-size: 18px;">
+                Blog
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="http://midas.iiitd.edu.in/blog/Mind-your-language.html">Mind Your Language</a></li>
+                            <li><a class="dropdown-item" href="http://midas.iiitd.edu.in/blog/KiKI-challenge.html">Kiki Challenge Dataset Release</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" style="position:relative;LEFT:230px;font-weight:bold;font-size:18px;TOP:22px">
+                        <a class="nav-link " href="http://midas.iiitd.edu.in/about.html#contact" tabindex="-1" aria-disabled="true" style="color:white;font-weight:bold;font-size:18px;">Contacts</a>
+                    </li>
+                </ul>
+                <div class="container" style="position:absolute;TOP:22px;LEFT:750px">
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-3">
+                            <form action="" class="search-form">
+                                <div class="form-group has-feedback">
+                                    <label for="search" class="sr-only">Search</label>
+                                    <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu-bar">
+                    <div id="menu" onclick="onClickMenu()" style="position: absolute;LEFT:1450px">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                    <ul class="nav" id="nav" style="position: relative;LEFT:1430px;TOP:40px">
+                        <li><a href="http://localhost/app/google-login/logout.php">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bg" id="menu-bg"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+            <img src="media/try1.png" style="padding-left: 166px;padding-top: 35px;width: 800px;height: 604px;" class="myslides">
+            <img src="media/try2.png" style="padding-left: 166px;padding-top: 35px;width: 800px;height: 604px;" class="myslides">
+            <img src="media/try3.png" style="padding-left: 166px;padding-top: 35px;width: 800px;height: 604px;" class="myslides">
+            <img src="media/try4.png" style="padding-left: 166px;padding-top: 35px;width: 800px;height: 604px;" class="myslides">
+            <img src="media/try5.png" style="padding-left: 166px;padding-top: 35px;width: 800px;height: 604px;" class="myslides">
+            <div class="w3-center w3-display-bottommiddle">
+                <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+                <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+                <span class="w3-badge demo w3-border" onclick="currentDiv(4)"></span>
+                <span class="w3-badge demo w3-border" onclick="currentDiv(5)"></span>
+            </div>
+        </div>
+        <img src="media/part3.png" style="position: absolute;top:45px;right: 250px;opacity: 0.8;width: 601px;height: 566px;">
+
+        <div class="container" style="position:absolute;BOTTOM: 160px;LEFT:840px; WIDTH:50px; HEIGHT:50px;">
+            <a href="../app/login.php" class="btn">
+                <p style="color: white;position: relative;TOP:2px">LOGIN | SIGNUP</p>
+            </a>
+        </div>
+        <div id="backgroundplaceholder">
+            <button id="playPauseButton" style="position: relative;BOTTOM: 20px;LEFT: -5px;color: white;"></button>
+            <a href="https://www.youtube.com/channel/UCPgCZNqUo3aaIfwtvXinAXw" style="position:absolute;LEFT:15px;BOTTOM: 20px;font-weight: bold;">
+                GO TO YOUTUBE</a>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
+
+        <script src="js/script.js"></script>
+</body>
+
+</html>
