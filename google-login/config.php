@@ -2,6 +2,7 @@
 
 //start session on web page
 session_start();
+error_reporting(0);
 
 //config.php
 

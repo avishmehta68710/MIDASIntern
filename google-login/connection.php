@@ -10,6 +10,5 @@ if($conn){
     // echo "Connection ok";
 }
 else{
-    echo "connection failed".mysqli_connect_error();
+    // echo "connection failed".mysqli_connect_error();
 }
-?>
