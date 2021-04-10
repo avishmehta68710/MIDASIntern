@@ -14,7 +14,7 @@ To set it up locally follow the steps given below:
 
 1 -> Set Up Apache and MySQL server. For Windows users you can install xampp and start Apache and MySQL Server.
 
-2 -> Clone the repository using command git clone and save the filed under name of app folder in xampp/httdocs
+2 -> Clone the repository using command git clone and save the filed under name of app folder in xampp/htdocs
 
 3 -> Go to PhpMyadmin Panel to set up the MySQL Database. You can go to PhpMyAdmin by typing localhost/phpmyadmin in your browser
 
