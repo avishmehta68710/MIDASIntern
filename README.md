@@ -4,6 +4,34 @@
 
 Hey there This website is made as a part for qualifying IIITD internship program. I made this website using PHP,HTML,CSS,JS and MySql as a database. It walks you through the MIDAS Lab at IIITD and show all its features in it.
 
+Home Page
+
+![home_page](https://user-images.githubusercontent.com/69706506/114283458-ed114c00-9a5a-11eb-9050-ecaeb19ea74a.gif)
+
+Home Page Features
+
+![home_features](https://user-images.githubusercontent.com/69706506/114283482-0c0fde00-9a5b-11eb-85fd-6d5caa8544e6.gif)
+
+Home To Login
+
+![home_to_login](https://user-images.githubusercontent.com/69706506/114283513-2cd83380-9a5b-11eb-9f3d-9aa6f51e9eec.gif)
+
+Google Login
+
+![google_login](https://user-images.githubusercontent.com/69706506/114283524-395c8c00-9a5b-11eb-95ce-5c7ba961ae43.gif)
+
+Custom Login
+
+![custom_login](https://user-images.githubusercontent.com/69706506/114283538-47aaa800-9a5b-11eb-8244-ddba1f220262.gif)
+
+Register
+
+![register](https://user-images.githubusercontent.com/69706506/114283552-5c873b80-9a5b-11eb-9091-3f8b3487d312.gif)
+
+Logout
+
+![logout](https://user-images.githubusercontent.com/69706506/114283561-69a42a80-9a5b-11eb-8c26-9edde7d8a45a.gif)
+
 # Requirements
 
 1 -> Apache and MySQL server
